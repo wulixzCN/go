@@ -12,4 +12,5 @@ func main() {
 
 func helloHandle(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "Hello world...")
+	fmt.Println("url", r.RemoteAddr)
 }
